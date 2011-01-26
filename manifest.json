@@ -5,9 +5,6 @@
   "background_page": "background.html",
   "icons": { "16": "bitcoin_16.png", "19": "bitcoin_19.png" },
   "options_page": "options.html",
-  "chrome_url_overrides": {
-    "newtab": "blank.html"
-  },
   "browser_action": {
     "default_icon": "bitcoin_19.png",
     "popup": "popup.html"
