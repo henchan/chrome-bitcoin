@@ -9,7 +9,8 @@
     "default_icon": "bitcoin_19.png",
     "popup": "popup.html"
   },
-  "content_scripts": [
+  "omnibox": { "keyword" : "BTC send" },
+    "content_scripts": [
     {
       "matches": ["http://*/*","https://*/*"],
       "js": ["content.js"]
