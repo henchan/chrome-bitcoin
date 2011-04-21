@@ -4,11 +4,6 @@
 <body>
 <div style='min-width: 120px;' id='output'></div>
 <script>
-  function act() {
-  chrome.tabs.create({'url': chrome.extension.getURL('accounting.html')}, function(tab) {
-  // Tab opened.
-  });
-  }
   document.write(balance());
 </script>
 <input type="button", value="More", onclick="act()" />
