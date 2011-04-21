@@ -6,7 +6,7 @@ function listaccounts()
   {
     var info = JSON.parse(res);
     for(var key in info.result) {
-      var writing = "<li> " + key + ":" + info[key] + "</li>";
+      var writing = "<li> " + key + ":" + info.result[key] + "</li>";
       document.getElementById("output").innerHTML = writing;
     }
   }
