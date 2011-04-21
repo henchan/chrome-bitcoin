@@ -1,0 +1,4 @@
+{
+	"omniboxUsage": {
+		"message": "Usage\n\t string : \n\t\tBTC <address> ",  "description": "Guidance on using Chromes omnibox to input" }
+ }
