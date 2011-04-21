@@ -6,7 +6,8 @@ function listaccounts()
   {
     var info = JSON.parse(res);
     for(var key in info.result) {
-      console.log(key);
+      var write = "<li> " + key + ":" + info[key].toFixed(2) + "/li"
+      document.getElementById("output").innerHTML = write;
     }
   }
   var failure = function (res)
