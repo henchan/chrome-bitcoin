@@ -34,8 +34,11 @@ function error(text) {
 <body>
 <div style='min-width: 120px;' id='output'></div>
 <script>
-chrome.tabs.create({'url': chrome.extension.getURL('accounting.html')}, function(tab) {
+  function act() {
+  chrome.tabs.create({'url': chrome.extension.getURL('accounting.html')}, function(tab) {
   // Tab opened.
-});
+  });
+  }
 </script>
+<input type="button", value="click me", onclick="act()" />
 </body>
