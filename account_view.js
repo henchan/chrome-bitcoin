@@ -1,7 +1,5 @@
 
-function createView()
+function get_accounts()
 {
-  chrome.tabs.create();
+  
 }
-
-chrome.browserAction.onClicked.addListener(function(tab) {createView() });
