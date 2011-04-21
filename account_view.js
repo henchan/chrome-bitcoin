@@ -5,5 +5,17 @@ function listaccounts()
   var success = function (res)
   {
     var info = JSON.parse(res);
+    for(var key in res) {
+      if Object.prototype.hasOwnProperty.call(res, key)
+      {
+	console.log(key);
+	
+      }
+    }
   }
+  var failure = function (res)
+  {
+    console.log("failure");
+  }
+  send(params,success,failure);
 }
