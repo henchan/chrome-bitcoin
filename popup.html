@@ -33,5 +33,9 @@ function error(text) {
 </script>
 <body>
 <div style='min-width: 120px;' id='output'></div>
-<a href="chrome://bitcoin">Try</html>
+<script>
+chrome.tabs.create({'url': chrome.extension.getURL('accounting.html')}, function(tab) {
+  // Tab opened.
+});
+</script>
 </body>
