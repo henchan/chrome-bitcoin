@@ -7,7 +7,13 @@ sendBTC.setAttribute('id','sendBTC');
 var body = document.getElementsByTagName('body');
 body[0].appendChild(sendBTC);
 
-var innerHTML = chrome.i18n.getMessage("Sending") +" <input id='amtBTC' type='text' name='amount' size='5' style='text-align: right;' value='" + amount + "'/> "+chrome.i18n.getMessage("BitCoinsTo") +"<br/><div id='addressBTC'>" + address + "</div><br/><button id='doSendBTC' onclick='sendCoins()'>Send</button>";
+var innerHTML = chrome.i18n.getMessage("Sending") +
+				" <input id='amtBTC' type='text' name='amount' size='5' style='text-align: right;' value='" + 
+				amount + 
+				"'/> "+chrome.i18n.getMessage("BitCoinsTo") +
+				"<br/><div id='addressBTC'>" + 
+				address + 
+				"</div><br/><button id='doSendBTC' onclick='sendCoins()'>Send</button>";
 var closeBox = "<button class='' id='killBTC' onclick='destroyBTC()'>Close</button><div id='messageBTC'></div>";
 document.getElementById('sendBTC').innerHTML = innerHTML + closeBox;
 document.getElementById('sendBTC').style.minHeight = "75px";

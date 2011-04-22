@@ -4,17 +4,17 @@
   "description": "Easily check your balance and send Bitcoins from Chrome.",
   "default_locale" : "en",
   "background_page": "background.html",
-  "icons": { "16": "bitcoin_16.png", "19": "bitcoin_19.png", "48": "bitcoin_48.png" },
+  "icons": { "16": "images/bitcoin_16.png", "19": "images/bitcoin_19.png", "48": "images/bitcoin_48.png" },
   "options_page": "options.html",
   "browser_action": {
-    "default_icon": "bitcoin_19.png",
+    "default_icon": "images/bitcoin_19.png",
     "popup": "popup.html"
   },
   "omnibox": { "keyword" : "BTC" },
     "content_scripts": [
     {
       "matches": ["http://*/*","https://*/*"],
-      "js": ["content.js"]
+      "js": ["lib/content.js"]
     }
   ],
   "permissions": [
