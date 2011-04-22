@@ -1,20 +1,12 @@
-<style>
-body {
-  min-width:175px;
-  overflow-x:hidden;
-}
 
-img {
-  margin:5px;
-  border:2px solid black;
-  vertical-align:middle;
-  width:75px;
-  height:75px;
-}
-</style>
-
-	<script type="text/javascript" src="/lib/popup.js"></script>
-
+<link href="style.css" media="all" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="lib/net.js"></script>
+<script type="text/javascript" src="lib/balance.js"></script>
+<script type="text/javascript" src="lib/create_tab.js"></script>
 <body>
 <div style='min-width: 120px;' id='output'></div>
+<script>
+  balance();
+</script>
+<input type="button", value="More", onclick="create_tab('accounting.html')" />
 </body>
