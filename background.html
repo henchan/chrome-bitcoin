@@ -67,11 +67,11 @@
         }
         
         function invalidAddress(){
-            alert('Invalid Bitcoin address.');
+            alert(chrome.i18n.getMessage("InvalidBitcoinAddress"));			
         }
         
         function error(text){
-            alert("Error validating address string.");
+            alert(chrome.i18n.getMessage("ErrorValidatingAddress"));
         }
         
         // This is very similar to handleSelection, but it requires different enough
@@ -164,12 +164,12 @@
         chrome.extension.onRequest.addListener(sendBTC_callback);
         
         var selectionMenuItem = chrome.contextMenus.create({
-            "title": "Send Bitcoins...",
+            "title": chrome.i18n.getMessage("SendBitcoins"),
             "contexts": ["selection"],
             "onclick": textOnClick
         });
         var selectionMenuItem = chrome.contextMenus.create({
-            "title": "Send Bitcoins...",
+            "title": chrome.i18n.getMessage("SendBitcoins"),
             "contexts": ["image"],
             "onclick": imageOnClick
         });

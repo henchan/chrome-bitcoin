@@ -35,12 +35,13 @@ req.send(params);
 
 function result() {
   var info = JSON.parse(req.responseText);
-  var writeblock = "<img src='bitcoin_19.png' style='width: 14px; height: 14px; border: 0px; vertical-align: bottom;'/><span style='font-weight: bold; font-size: 14pt;'>Balance: </span><span style='font-size: 14pt;'>" + info.result.balance.toFixed(2) + "</span><br/>";
+  var writeblock = "<img src='bitcoin_19.png' style='width: 14px; height: 14px; border: 0px; vertical-align: bottom;'/><span style='font-weight: bold; font-size: 14pt;'>"+chrome.i18n.getMessage("AccountBalance") +": </span><span style='font-size: 14pt;'>" + info.result.balance.toFixed(2) + "</span><br/>";
   document.getElementById("output").innerHTML = writeblock;
 }
 
 function error(text) {
-  document.getElementById("output").innerHTML = "Error fetching wallet data.";
+  document.getElementById("output").innerHTML = chrome.i18n.getMessage("serverError"); 
+  
 }
 
 </script>
