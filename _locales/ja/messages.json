@@ -1,0 +1,13 @@
+{
+	"omniboxUsage": { "message": "Usage\n\t string : \n\t\tBTC <bitcoin address to pay, amount to pay> ",  "description": "Guidance on using Chromes omnibox to input" },
+	"omniboxUsage": {"message": "Error fetching wallet data"},
+	"AccountBalance": {"message": "Balance"},
+	"OptionsSaved": {"message": "Options Saved"},
+	"SendBitcoins": {"message": "Send Bitcoins ..."},
+	"Sending": {"message": "Sending"},
+	"BitCoinsTo": {"message": "Bitcoins To .."},
+	"InvalidBitcoinAddress": {"message": "Invalid Bitcoin address"},
+	"ErrorValidatingAddress": {"message": "Error validating address string"},
+	"BitcoinsSuccessfullySent": {"message": " Bitcoins successfully sent to:"},
+	"InvalidAmount": {"message": "Invalid amount."}
+ }

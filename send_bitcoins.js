@@ -7,7 +7,13 @@ sendBTC.setAttribute('id','sendBTC');
 var body = document.getElementsByTagName('body');
 body[0].appendChild(sendBTC);
 
-var innerHTML = "Sending <input id='amtBTC' type='text' name='amount' size='5' style='text-align: right;' value='" + amount + "'/> Bitcoins to...<br/><div id='addressBTC'>" + address + "</div><br/><button id='doSendBTC' onclick='sendCoins()'>Send</button>";
+var innerHTML = chrome.i18n.getMessage("Sending") +
+				" <input id='amtBTC' type='text' name='amount' size='5' style='text-align: right;' value='" + 
+				amount + 
+				"'/> "+chrome.i18n.getMessage("BitCoinsTo") +
+				"<br/><div id='addressBTC'>" + 
+				address + 
+				"</div><br/><button id='doSendBTC' onclick='sendCoins()'>Send</button>";
 var closeBox = "<button class='' id='killBTC' onclick='destroyBTC()'>Close</button><div id='messageBTC'></div>";
 document.getElementById('sendBTC').innerHTML = innerHTML + closeBox;
 document.getElementById('sendBTC').style.minHeight = "75px";
@@ -53,10 +59,10 @@ function sendCoins()
 	   amount = '0' + amount;
      var reqData = JSON.parse('{"action": "sendCoins", "amount": ' + amount + ', "address": "' + address + '"}');
      chrome.extension.sendRequest(reqData, sendResult);
-     document.getElementById('messageBTC').innerText = 'Sending...';
+     document.getElementById('messageBTC').innerText = chrome.i18n.getMessage("Sending");
      document.getElementById('amtBTC').value = amount;
 	} else {
-     document.getElementById('messageBTC').innerText = 'Invalid amount.';
+     document.getElementById('messageBTC').innerText = chrome.i18n.getMessage("InvalidAmount");
 	}
 }
 
@@ -70,7 +76,7 @@ function sendResult(data) {
    {
     output = "Error sending Bitcoins: " + info.error.message;
    } else if(info.result) {
-    output = parseFloat(amount).toFixed(2) + " Bitcoins successfully sent to:<br/>" + address;
+    output = parseFloat(amount).toFixed(2) + chrome.i18n.getMessage("BitcoinsSuccessfullySent")+" <br/>" + address;
    }
   } else {
    output = "Error: " + output;
