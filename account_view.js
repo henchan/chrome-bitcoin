@@ -8,7 +8,8 @@ function listaccounts()
     for(var key in info.result) {
       var li = document.createElement('li');
       var text = document.createTextNode(key + ":" + info.result[key]);
-      document.getElementById("output").appendChild(li.appendChild(text));
+      li.appendChild(text);
+      document.getElementById("output").appendChild(li);
     }
   }
   var failure = function (res)
