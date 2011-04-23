@@ -11,12 +11,11 @@ Installation
 User Interfaces
 ----------------------
 ### Popup
-		Click the chrome-bitcoin logo for :
-			Account Balance
-			Account Details
+Click the chrome-bitcoin logo for :
+#### Account Balance
+#### Account Details
 ### Options
-		Right Click the chrome-bitcoin logo to configure the extension to connect to a Bitcoin service. You will need to know details of the service (ip:port, user and password).
-		If connecting to the standard Bitcoin desktop client it must have been started in server mode (e.g. bitcoin -server -RPCALLOWIP=127.0.0.1 -RPCPORT=8332 & ). Also a file called bitcoin.conf should exist in the top-level directory
+		Right Click the chrome-bitcoin logo to configure the extension to connect to a Bitcoin service. You will need to know details of the service (ip:port, user and password). If connecting to the standard Bitcoin desktop client it must have been started in server mode     (e.g. bitcoin -server -RPCALLOWIP=127.0.0.1 -RPCPORT=8332 & ). Also a file called bitcoin.conf should exist in the top-level directory
 ### Omnibox
 		In the Chrome Omnibox type <btc --help> for guidance on using the omnibox interface.
 ### Context Sensitive
