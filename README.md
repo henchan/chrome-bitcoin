@@ -4,8 +4,11 @@ chrome-bitcoin is an open source project that provides access to Bitcoin service
 Installation
 ----------------
 The extension will be available from the [Google Chrome Extensions webstore (chrome-bitcoin)](https://chrome.google.com/webstore "chrome-bitcoin") 
+
 Follow installation guidance given there. 
+
 Configure the extension (see Options below)
+
 User Interfaces
 ----------------------
 ### Popup
