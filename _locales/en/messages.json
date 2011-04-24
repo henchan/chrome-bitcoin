@@ -1,5 +1,5 @@
 {
-	"omniboxUsage": { "message": "Usage\n\t string : \n\t\tBTC <bitcoin address to pay, amount to pay> ",  "description": "Guidance on using Chromes omnibox to input" },
+	"omniboxUsage": { "message": "Usage:\n[BTC ?]\t\t\tthis message\n[BTC accounts]\taccounts page\n[BTC <address>] \tpay bitcoin address ",  "description": "Guidance on using Chromes omnibox to input" },
 	"serverError": {"message": "Error fetching wallet data"},
 	"AccountBalance": {"message": "Balance"},
 	"OptionsSaved": {"message": "Options Saved"},
